@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-color: #151515;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+nav {
+    background-color: #151551;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid #d4af37;
+    border-bottom: 1px solid #d4af37;
+}
+nav a {
+    color: ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+    border-right: 1px solid #d4af37;
+}
+h1 {
+    font-size: 40px;
+    color: #142551;
+    margin-top: 40px;
+    margin-left: 0;
+}
+button {
+    background-color: #bd925b;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+section {
+    padding: 40px;
+    text-align: center;
+}
+h2 {
+    color: #14251f;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+h3{
+    color: #d4af37;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+section {
+    display: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+header {
+    background-color: #151515;
+    color: #d4af37;
+    padding: 20px;
+    text-align: center;
+}
+header {
+    color: #d4af37;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+nav a:hover {
+    color: #bd925b;
+}
+body > h1 {
+    margin-top: 60px;
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+body > p {
+    font-size: 18px;
+    color: #555555;
+    text-align: center;
+    margin: 20px auto;
+}
+body > button {
+    display: block;
+    margin: 30px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+nav input {
+    padding: 12px 15px;
+    border: 1px solid #d4af37;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+    background-color: #151515;
+    color: white;
+
+}
+nav input:focus {
+    box-shadow: 0 0 5px #bd925b;
+}
+
+.products div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+}
+
+.products img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.hero {
+    background: linear-gradient(135deg, #151515, #303030);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #d4af37;
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.shop-btn {
+    background-color: #d4af37;
+    color: black;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.shop-btn:hover {
+    background-color: white;
+    color: #d4af37;
+}
+
+.products {
+    background-color: #151515;
+    color: white;
+    text-align: center;
+    padding: 60px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.products h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.products p {
+    color: #cccccc;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.product-grid>div {
+   background-color: #242424;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   width: 100%;
+   margin: 0;
+}
+
+.products img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #1b1b1b;
+    display: blocks;
+}
+
+.products h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+.products > div:hover {
+    transform: translateY(-8px);
+    transition: 0.3 ease;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 100%;
+    margin: 30px auto 0;
+}
+
+.product-grid >div {
+    background-color: #242424;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    nav a {
+        border-right: none;
+        border-bottom: 1px solid #d4af37;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    nav input {
+        width: 90%;
+        max-width: 300px;
+    }
+    .products {
+        padding: 40px 15px;
+    }
+    .products h2 {
+        font-size: 28px;
+    }
+}
+.hero {
+    padding: 50px 15px;
+}
+.hero h1 {
+    font-size: 32px;
+}
+.hero p {
+    font-size: 16px;
+}
+body header h2 {
+    color: gold !important;
+}
+.product-grid a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.page-title {
+    color: #d4af37;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+body> p.page-intro {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px auto 35px;
+}
+.product-grid > div {
+    border: 1px solid #3a3a3a;
+    border-radius: 15px;
+    padding: 25px;
+    background-color: #242424;
+    transition: all 0.3s ease;
+}
+.products h4 {
+    color: #d4af37;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.product-grid > div:hover {
+    transform: translateY(-8px);
+    border-color: #d4af37;
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+}/* Contact Form Styling */
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #242424;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    background-color: #151515;
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+form button {
+    width: 100%;
+    background-color: #d4af37;
+    color: #151515;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+form button:hover {
+    background-color: white;
+    color: #151515;
+}.products a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.products a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
